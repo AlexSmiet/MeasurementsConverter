@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MeasurementsConverterController {
     @RequestMapping("/gram")
-    public double stone_to_kilogram(@RequestParam double ounce){
+    public double ounce_to_kilogram(@RequestParam double ounce){
         double gram = ounce * 28.35;
         return gram;
     }
